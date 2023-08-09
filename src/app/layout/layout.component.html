@@ -1,0 +1,53 @@
+<header>
+   <mat-toolbar>
+      <span>SmallWorld</span>
+   </mat-toolbar>
+</header>
+<div class="bg-white">
+   <div class="flex gap-2 justify-end pt-2">
+      <div>
+         <mat-form-field>
+            <mat-label>Agent Name</mat-label>
+            <select matNativeControl required>
+               <option value="volvo">Dolor</option>
+               <option value="saab">Saab</option>
+               <option value="mercedes">Mercedes</option>
+               <option value="audi">Audi</option>
+            </select>
+         </mat-form-field>
+      </div>
+      <div>
+         <mat-form-field>
+            <mat-label>Country</mat-label>
+            <select matNativeControl required>
+               <option value="volvo">Volvo</option>
+               <option value="saab">Saab</option>
+               <option value="mercedes">Mercedes</option>
+               <option value="audi">Audi</option>
+            </select>
+         </mat-form-field>
+      </div>
+   </div>
+</div>
+
+<mat-sidenav-container class="rr-container">
+   <mat-sidenav mode="side" opened>
+      <div class="col-span-1">
+         <div class="mt-6 h-full grid w-36">
+            <a mat-button href="#" color="primary">
+               Login
+               <mat-icon>verified_user</mat-icon>
+            </a>
+            <a mat-button href="#" color="secondary">
+               Profile
+               <mat-icon>account_circle</mat-icon>
+            </a>
+            <a mat-button href="#" color="secondary">
+               Favorites
+               <mat-icon>favorite</mat-icon>
+            </a>
+         </div>
+      </div>
+   </mat-sidenav>
+   <section><router-outlet></router-outlet></section>
+</mat-sidenav-container>
